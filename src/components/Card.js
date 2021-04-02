@@ -1,7 +1,7 @@
 import React from 'react' ; 
 
 function Card({name , url ,description , languages , date}){
-    console.log(languages) ;
+  
     return(
         <a className = 'card' href ={url} target= '_blank' rel='noreferrer'>
             <div className ='card-header'>
