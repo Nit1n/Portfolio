@@ -12,15 +12,14 @@ function OtherProjects(){
         }).catch(err=>{
             console.log('error in fetching data in Other Porjects' , err) ; 
         })
-    })
+    } ,[])
     return(
         <div className= "box">
             <div className='header'>Some Other Projects</div>
             <div className = 'projects'>
                 {
                     projects.map(project=>{
-                        console.log(project['fork']);
-                        if(!project['fork'] && ignore.indexOf(project['name']) === -1) return <Card name = {project['name']} url = {project['html_url']} description={project['description']} languages= {project['language']} date = {project['created_at']}/>
+                        if(!project['fork'] && ignore.indexOf(project['name']) === -1) return <Card key={project['id']} name = {project['name']} url = {project['html_url']} description={project['description']} languages= {project['language']} date = {project['created_at']}/>
                         else return null;
                     })
                 }

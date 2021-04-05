@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css'; 
 
 function Work(){
+    useEffect(()=>{
+        Aos.init({duration:2000})
+    },[])
     return(
         <div className= "box">
-            <div className='header'>Education and Internship</div>
+            <div data-aos='fade-up' className='header'>Education and Internship</div>
             <div className ='experience'>            
-                <div class = 'education'>
+                <div data-aos ='fade-up' class = 'education'>
                     <ul>
                     <li>B.Tech (Electrical Engineering) | National Institute of technology Kurukshetra | (July 2017 - June 2021) </li>
                     <p>Cgpa : 8.0</p>
@@ -13,7 +18,7 @@ function Work(){
                     <p>Score : 86.2%</p>
                     </ul>
                 </div>  
-                <div className= 'skills'>
+                <div data-aos='fade-up'  className= 'skills'>
                     <p>Here are technologies I've been working with recently:</p>
                     <div className= 'skill-divison'>
                         <div>
@@ -42,7 +47,7 @@ function Work(){
                         </div>
                     </div>
                 </div>
-                <div className = 'work'>
+                <div data-aos ='fade-up' className = 'work'>
                     <table>
                         <tbody>
                         <tr>

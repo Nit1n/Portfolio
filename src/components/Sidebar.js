@@ -4,7 +4,7 @@ import { VscGithub ,} from "react-icons/vsc";
 import {FiLinkedin} from "react-icons/fi";
 import {SiCodeforces, SiCodechef ,SiHackerrank , SiHackerearth} from "react-icons/si";
 function Sidebar(){
-
+    
     return (
         <div className = 'sidebar'>
             <a href={"https://github.com/Nit1n"} className="icon" target="_blank" rel="noopener noreferrer"><VscGithub size="1.5em" color="white" /></a>

@@ -23,7 +23,7 @@ function Projects(){
         <div className= "box">
             <div className ='header'>Projects</div>
             <div className = 'projects'>
-                <Card name = {news['name']} url = {news['html_url']} description={news['description']} languages= {news['language']} date = {news['created_at']}/>
+                <Card  name = {news['name']} url = {news['html_url']} description={news['description']} languages= {news['language']} date = {news['created_at']}/>
                 <Card name = {tweets['name']} url = {tweets['html_url']} description={tweets['description']} languages= {tweets['language']} date = {tweets['created_at']}/>
                 <Card name = {email['name']} url = {email['html_url']} description={email['description']} languages= {email['language']} date = {email['created_at']}/>
 
