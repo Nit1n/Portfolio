@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import Card from './Card'
 import axios from 'axios'
+import Aos from 'aos';
 
 function Projects(){
     const [news , setNews] = useState({}) ; 
     const [tweets , setTweets] = useState({}) ; 
     const [email , setEmail] = useState({}) ; 
     useEffect(()=>{
+        Aos.init({duration:2000})
         axios.all([
             axios.get('https://api.github.com/repos/nit1n/News') , 
             axios.get('https://api.github.com/repos/nit1n/Disasterous-NonDisasterous-Tweets-Recognition-using-NLP') , 
@@ -21,7 +23,7 @@ function Projects(){
     } , [])
     return(
         <div className= "box">
-            <div className ='header'>Projects</div>
+            <div data-aos='fade-up' className ='header'>Projects</div>
             <div className = 'projects'>
                 <Card  name = {news['name']} url = {news['html_url']} description={news['description']} languages= {news['language']} date = {news['created_at']}/>
                 <Card name = {tweets['name']} url = {tweets['html_url']} description={tweets['description']} languages= {tweets['language']} date = {tweets['created_at']}/>
