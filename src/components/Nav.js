@@ -1,5 +1,6 @@
 import React ,{useState , useEffect} from 'react'
 import {FaBars} from "react-icons/fa";
+import resume from '../documents/Navneet.pdf'
 import Aos from 'aos';
 import 'aos/dist/aos.css'; 
 import bitmoji from '../images/bitmoji.png'
@@ -28,6 +29,7 @@ function Nav(){
           <li><ScrollLink to='WORK' spy={true} smooth={true} duration={500} >Education</ScrollLink></li>
           <li><ScrollLink to='PROJECTS' spy={true} smooth={true} duration={500}>Projects</ScrollLink></li>
           <li><ScrollLink to ='CONTACT' spy={true} smooth={true} duration={500}>Contact</ScrollLink></li>
+          <li><a href={resume} target='_blank' rel="noreferrer" className='resume'>Resume</a></li>
         </ul>
         <ul className='nav-links-mobile' style={{transform: (toggle && width <= 768)?'translateX(0)':'translateX(-300px)'}}>
             <li><ScrollLink to='INTRO' spy={true} smooth={true} duration={500} onClick={()=>setToggle(!toggle)} >About</ScrollLink></li>
