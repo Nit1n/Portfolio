@@ -133,9 +133,8 @@
 .info{
   text-align: left ;
   color: #CBD2D2 ;
-  font-size : 1rem ;
+  font-size : 1.5rem ;
   width : 68% ;
-
   font-family: 'Syne', sans-serif;
 /* font-family: 'Pacifico', cursive; */
 }
@@ -322,6 +321,9 @@ td{
     font-size: 1.5rem;
     
   }
+  .info{
+    font-size: 1rem;
+  }
   .greeting{
     font-size : 1rem ;
   }
@@ -346,4 +348,12 @@ td{
   .nav-icon{
     display: block;
   }
+}
+
+/* reponsive design for small mobiles */
+
+@media all and (max-width : 600px){
+  .skill-divison{
+    font-size: 0.52rem;
+  } 
 }
