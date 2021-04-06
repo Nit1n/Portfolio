@@ -360,6 +360,11 @@ td{
   .nav-icon{
     display: block;
   }
+
+  .card:hover {
+    animation : shake 0.5s ;
+  }
+
 }
 
 /* reponsive design for small mobiles */
