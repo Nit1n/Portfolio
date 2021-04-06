@@ -15,7 +15,6 @@ function OtherProjects(){
     } ,[])
     return(
         <div className= "box">
-            <div data-aos='fade-up' className='header'>Some Other Projects</div>
             <div className = 'projects'>
                 {
                     projects.map(project=>{

@@ -8,18 +8,16 @@ function Work(){
     },[])
     return(
         <div className= "box">
-            <div data-aos='fade-up' className='header'>Education and Internship</div>
+            <div data-aos='fade-up' className='header'>Education and Work Experience</div>
             <div className ='experience'>            
                 <div data-aos ='fade-up' class = 'education'>
                     <ul>
                     <li>B.Tech (Electrical Engineering) | National Institute of technology Kurukshetra | (July 2017 - June 2021) </li>
-                    <p>Cgpa : 8.0</p>
                     <li>Class XII | CBSE | (April 2015 - May 2016)</li>
-                    <p>Score : 86.2%</p>
                     </ul>
                 </div>  
                 <div data-aos='fade-up'  className= 'skills'>
-                    <p>Here are technologies I've been working with recently:</p>
+                    <p>Here are technologies I use:</p>
                     <div className= 'skill-divison'>
                         <div>
                             <ul>
